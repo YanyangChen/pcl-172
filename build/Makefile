@@ -1486,19 +1486,6 @@ pcl_openni_viewer/fast:
 .PHONY : pcl_openni_viewer/fast
 
 #=============================================================================
-# Target rules for targets named pcl_openni_viewer2
-
-# Build rule for target.
-pcl_openni_viewer2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_openni_viewer2
-.PHONY : pcl_openni_viewer2
-
-# fast build rule for target.
-pcl_openni_viewer2/fast:
-	$(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build
-.PHONY : pcl_openni_viewer2/fast
-
-#=============================================================================
 # Target rules for targets named pcl_pcd_image_viewer
 
 # Build rule for target.
@@ -1731,7 +1718,6 @@ help:
 	@echo "... pcl_visualization"
 	@echo "... pcl_hdl_viewer_simple"
 	@echo "... pcl_openni_viewer"
-	@echo "... pcl_openni_viewer2"
 	@echo "... pcl_pcd_image_viewer"
 	@echo "... pcl_timed_trigger_test"
 	@echo "... pcl_viewer"

@@ -5,7 +5,7 @@
  #include <pcl/filters/passthrough.h>
  #include <iostream>
  #include <pcl/point_types.h>
- 
+ #include <pcl/filters/voxel_grid.h>
  
 
  class SimpleOpenNIViewer
@@ -18,7 +18,9 @@
      void cloud_cb_ (const pcl::PointCloud<pcl::PointXYZ>::ConstPtr &cloud) //this is a subfunction from a sub object under main function
      {
 	    pcl::PassThrough<pcl::PointXYZ> pass; //generate the object which contains the function of filtering
+	    pcl::VoxelGrid<pcl::PointXYZ> sor;
 	    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>); //generate the container of filtered clouds
+        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filteredv (new pcl::PointCloud<pcl::PointXYZ>);
        if (!viewer.wasStopped())
        //modify pointclouds here, it's assumed it's captured and used as parameters in the function
         {
@@ -29,9 +31,12 @@
   //pass.setFilterLimitsNegative (true);
 		pass.filter (*cloud_filtered);
        
+       sor.setInputCloud (cloud_filtered);
+	   sor.setLeafSize (0.1f, 0.1f, 0.1f);
+       sor.filter (*cloud_filteredv);
        
        
-         viewer.showCloud (cloud_filtered);
+         viewer.showCloud (cloud_filteredv);
 	 }
          
      }
@@ -49,7 +54,7 @@
 
        while (!viewer.wasStopped())
        {
-         boost::this_thread::sleep (boost::posix_time::seconds (1)); // can't understand why two boost functions here...
+         boost::this_thread::sleep (boost::posix_time::seconds (1)); // can't understand why two boost functions here.
        }
 
        interface->stop ();

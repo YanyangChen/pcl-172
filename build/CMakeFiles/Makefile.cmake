@@ -276,7 +276,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "visualization/CMakeFiles/pcl_visualization.dir/DependInfo.cmake"
   "visualization/tools/CMakeFiles/pcl_hdl_viewer_simple.dir/DependInfo.cmake"
   "visualization/tools/CMakeFiles/pcl_openni_viewer.dir/DependInfo.cmake"
-  "visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/DependInfo.cmake"
   "visualization/tools/CMakeFiles/pcl_pcd_image_viewer.dir/DependInfo.cmake"
   "visualization/tools/CMakeFiles/pcl_timed_trigger_test.dir/DependInfo.cmake"
   "visualization/tools/CMakeFiles/pcl_viewer.dir/DependInfo.cmake"

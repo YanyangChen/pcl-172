@@ -11,9 +11,11 @@ visualization/tools/CMakeFiles/pcl_openni_viewer.dir/openni_viewer.cpp.o
  ../common/include/pcl/PolygonMesh.h
  ../common/include/pcl/TextureMesh.h
  ../common/include/pcl/Vertices.h
+ ../common/include/pcl/common/common.h
  ../common/include/pcl/common/concatenate.h
  ../common/include/pcl/common/copy_point.h
  ../common/include/pcl/common/eigen.h
+ ../common/include/pcl/common/impl/common.hpp
  ../common/include/pcl/common/impl/copy_point.hpp
  ../common/include/pcl/common/impl/eigen.hpp
  ../common/include/pcl/common/impl/io.hpp
@@ -40,7 +42,9 @@ visualization/tools/CMakeFiles/pcl_openni_viewer.dir/openni_viewer.cpp.o
  ../filters/include/pcl/filters/impl/filter.hpp
  ../filters/include/pcl/filters/impl/filter_indices.hpp
  ../filters/include/pcl/filters/impl/passthrough.hpp
+ ../filters/include/pcl/filters/impl/voxel_grid.hpp
  ../filters/include/pcl/filters/passthrough.h
+ ../filters/include/pcl/filters/voxel_grid.h
  ../geometry/include/pcl/geometry/planar_polygon.h
  ../io/include/pcl/io/boost.h
  ../io/include/pcl/io/eigen.h

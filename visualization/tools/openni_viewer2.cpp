@@ -18,7 +18,9 @@
      void cloud_cb_ (const pcl::PointCloud<pcl::PointXYZ>::ConstPtr &cloud) //this is a subfunction from a sub object under main function
      {
 	    pcl::PassThrough<pcl::PointXYZ> pass; //generate the object which contains the function of filtering
+	    pcl::VoxelGrid<pcl::PointXYZ> sor;
 	    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>); //generate the container of filtered clouds
+        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filteredv (new pcl::PointCloud<pcl::PointXYZ>);
        if (!viewer.wasStopped())
        //modify pointclouds here, it's assumed it's captured and used as parameters in the function
         {

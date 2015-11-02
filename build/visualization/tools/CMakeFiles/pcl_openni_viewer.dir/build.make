@@ -96,11 +96,6 @@ bin/pcl_openni_viewer: lib/libpcl_io.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_kdtree.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_visualization.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_filters.so.1.7.2
-bin/pcl_openni_viewer: lib/libpcl_common.so.1.7.2
-bin/pcl_openni_viewer: lib/libpcl_io.so.1.7.2
-bin/pcl_openni_viewer: lib/libpcl_kdtree.so.1.7.2
-bin/pcl_openni_viewer: lib/libpcl_visualization.so.1.7.2
-bin/pcl_openni_viewer: lib/libpcl_filters.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_io.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_io_ply.so.1.7.2
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libpng.so
