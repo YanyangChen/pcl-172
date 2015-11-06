@@ -1,3 +1,4 @@
+/home/chen/pcl-pcl-1.7.2/build/visualization/tools/CMakeFiles/openninormal.dir
 /home/chen/pcl-pcl-1.7.2/build/tools/CMakeFiles/pcl_add_gaussian_noise.dir
 /home/chen/pcl-pcl-1.7.2/build/tools/CMakeFiles/pcl_boundary_estimation.dir
 /home/chen/pcl-pcl-1.7.2/build/tools/CMakeFiles/pcl_cluster_extraction.dir
@@ -56,6 +57,8 @@
 /home/chen/pcl-pcl-1.7.2/build/io/tools/CMakeFiles/pcl_openni_pcd_recorder.dir
 /home/chen/pcl-pcl-1.7.2/build/tools/CMakeFiles/pcl_openni_save_image.dir
 /home/chen/pcl-pcl-1.7.2/build/visualization/tools/CMakeFiles/pcl_openni_viewer.dir
+/home/chen/pcl-pcl-1.7.2/build/visualization/tools/CMakeFiles/pcl_openni_viewer2.dir
+/home/chen/pcl-pcl-1.7.2/build/visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir
 /home/chen/pcl-pcl-1.7.2/build/tools/CMakeFiles/pcl_organized_pcd_to_png.dir
 /home/chen/pcl-pcl-1.7.2/build/tools/CMakeFiles/pcl_outlier_removal.dir
 /home/chen/pcl-pcl-1.7.2/build/outofcore/CMakeFiles/pcl_outofcore.dir

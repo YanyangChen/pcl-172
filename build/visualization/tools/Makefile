@@ -173,6 +173,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+visualization/tools/CMakeFiles/openninormal.dir/rule:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f CMakeFiles/Makefile2 visualization/tools/CMakeFiles/openninormal.dir/rule
+.PHONY : visualization/tools/CMakeFiles/openninormal.dir/rule
+
+# Convenience name for target.
+openninormal: visualization/tools/CMakeFiles/openninormal.dir/rule
+.PHONY : openninormal
+
+# fast build rule for target.
+openninormal/fast:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/openninormal.dir/build.make visualization/tools/CMakeFiles/openninormal.dir/build
+.PHONY : openninormal/fast
+
+# Convenience name for target.
 visualization/tools/CMakeFiles/pcl_hdl_viewer_simple.dir/rule:
 	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f CMakeFiles/Makefile2 visualization/tools/CMakeFiles/pcl_hdl_viewer_simple.dir/rule
 .PHONY : visualization/tools/CMakeFiles/pcl_hdl_viewer_simple.dir/rule
@@ -199,6 +213,34 @@ pcl_openni_viewer: visualization/tools/CMakeFiles/pcl_openni_viewer.dir/rule
 pcl_openni_viewer/fast:
 	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer.dir/build
 .PHONY : pcl_openni_viewer/fast
+
+# Convenience name for target.
+visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/rule:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f CMakeFiles/Makefile2 visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/rule
+.PHONY : visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/rule
+
+# Convenience name for target.
+pcl_openni_viewer2: visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/rule
+.PHONY : pcl_openni_viewer2
+
+# fast build rule for target.
+pcl_openni_viewer2/fast:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build
+.PHONY : pcl_openni_viewer2/fast
+
+# Convenience name for target.
+visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/rule:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f CMakeFiles/Makefile2 visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/rule
+.PHONY : visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/rule
+
+# Convenience name for target.
+pcl_openni_viewer_simple: visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/rule
+.PHONY : pcl_openni_viewer_simple
+
+# fast build rule for target.
+pcl_openni_viewer_simple/fast:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build
+.PHONY : pcl_openni_viewer_simple/fast
 
 # Convenience name for target.
 visualization/tools/CMakeFiles/pcl_pcd_image_viewer.dir/rule:
@@ -314,6 +356,78 @@ openni_viewer.cpp.s:
 	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer.dir/openni_viewer.cpp.s
 .PHONY : openni_viewer.cpp.s
 
+openni_viewer2.o: openni_viewer2.cpp.o
+.PHONY : openni_viewer2.o
+
+# target to build an object file
+openni_viewer2.cpp.o:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/openni_viewer2.cpp.o
+.PHONY : openni_viewer2.cpp.o
+
+openni_viewer2.i: openni_viewer2.cpp.i
+.PHONY : openni_viewer2.i
+
+# target to preprocess a source file
+openni_viewer2.cpp.i:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/openni_viewer2.cpp.i
+.PHONY : openni_viewer2.cpp.i
+
+openni_viewer2.s: openni_viewer2.cpp.s
+.PHONY : openni_viewer2.s
+
+# target to generate assembly for a file
+openni_viewer2.cpp.s:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/openni_viewer2.cpp.s
+.PHONY : openni_viewer2.cpp.s
+
+openni_viewer_simple.o: openni_viewer_simple.cpp.o
+.PHONY : openni_viewer_simple.o
+
+# target to build an object file
+openni_viewer_simple.cpp.o:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/openni_viewer_simple.cpp.o
+.PHONY : openni_viewer_simple.cpp.o
+
+openni_viewer_simple.i: openni_viewer_simple.cpp.i
+.PHONY : openni_viewer_simple.i
+
+# target to preprocess a source file
+openni_viewer_simple.cpp.i:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/openni_viewer_simple.cpp.i
+.PHONY : openni_viewer_simple.cpp.i
+
+openni_viewer_simple.s: openni_viewer_simple.cpp.s
+.PHONY : openni_viewer_simple.s
+
+# target to generate assembly for a file
+openni_viewer_simple.cpp.s:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/openni_viewer_simple.cpp.s
+.PHONY : openni_viewer_simple.cpp.s
+
+openninormal.o: openninormal.cpp.o
+.PHONY : openninormal.o
+
+# target to build an object file
+openninormal.cpp.o:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/openninormal.dir/build.make visualization/tools/CMakeFiles/openninormal.dir/openninormal.cpp.o
+.PHONY : openninormal.cpp.o
+
+openninormal.i: openninormal.cpp.i
+.PHONY : openninormal.i
+
+# target to preprocess a source file
+openninormal.cpp.i:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/openninormal.dir/build.make visualization/tools/CMakeFiles/openninormal.dir/openninormal.cpp.i
+.PHONY : openninormal.cpp.i
+
+openninormal.s: openninormal.cpp.s
+.PHONY : openninormal.s
+
+# target to generate assembly for a file
+openninormal.cpp.s:
+	cd /home/chen/pcl-pcl-1.7.2/build && $(MAKE) -f visualization/tools/CMakeFiles/openninormal.dir/build.make visualization/tools/CMakeFiles/openninormal.dir/openninormal.cpp.s
+.PHONY : openninormal.cpp.s
+
 pcd_viewer.o: pcd_viewer.cpp.o
 .PHONY : pcd_viewer.o
 
@@ -373,10 +487,13 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... openninormal"
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... pcl_hdl_viewer_simple"
 	@echo "... pcl_openni_viewer"
+	@echo "... pcl_openni_viewer2"
+	@echo "... pcl_openni_viewer_simple"
 	@echo "... pcl_pcd_image_viewer"
 	@echo "... pcl_timed_trigger_test"
 	@echo "... pcl_viewer"
@@ -391,6 +508,15 @@ help:
 	@echo "... openni_viewer.o"
 	@echo "... openni_viewer.i"
 	@echo "... openni_viewer.s"
+	@echo "... openni_viewer2.o"
+	@echo "... openni_viewer2.i"
+	@echo "... openni_viewer2.s"
+	@echo "... openni_viewer_simple.o"
+	@echo "... openni_viewer_simple.i"
+	@echo "... openni_viewer_simple.s"
+	@echo "... openninormal.o"
+	@echo "... openninormal.i"
+	@echo "... openninormal.s"
 	@echo "... pcd_viewer.o"
 	@echo "... pcd_viewer.i"
 	@echo "... pcd_viewer.s"

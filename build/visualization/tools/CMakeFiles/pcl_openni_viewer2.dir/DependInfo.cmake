@@ -20,6 +20,15 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/chen/pcl-pcl-1.7.2/build/common/CMakeFiles/pcl_common.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/io/CMakeFiles/pcl_io.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/kdtree/CMakeFiles/pcl_kdtree.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/visualization/CMakeFiles/pcl_visualization.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/filters/CMakeFiles/pcl_filters.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/io/CMakeFiles/pcl_io_ply.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/sample_consensus/CMakeFiles/pcl_sample_consensus.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/search/CMakeFiles/pcl_search.dir/DependInfo.cmake"
+  "/home/chen/pcl-pcl-1.7.2/build/octree/CMakeFiles/pcl_octree.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -40,6 +49,8 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../geometry/include"
   "../search/include"
   "../filters/include"
+  "../features/include"
+  "../octree/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

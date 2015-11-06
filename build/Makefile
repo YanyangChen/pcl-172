@@ -1460,6 +1460,19 @@ pcl_visualization/fast:
 .PHONY : pcl_visualization/fast
 
 #=============================================================================
+# Target rules for targets named openninormal
+
+# Build rule for target.
+openninormal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 openninormal
+.PHONY : openninormal
+
+# fast build rule for target.
+openninormal/fast:
+	$(MAKE) -f visualization/tools/CMakeFiles/openninormal.dir/build.make visualization/tools/CMakeFiles/openninormal.dir/build
+.PHONY : openninormal/fast
+
+#=============================================================================
 # Target rules for targets named pcl_hdl_viewer_simple
 
 # Build rule for target.
@@ -1484,6 +1497,32 @@ pcl_openni_viewer: cmake_check_build_system
 pcl_openni_viewer/fast:
 	$(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer.dir/build
 .PHONY : pcl_openni_viewer/fast
+
+#=============================================================================
+# Target rules for targets named pcl_openni_viewer2
+
+# Build rule for target.
+pcl_openni_viewer2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_openni_viewer2
+.PHONY : pcl_openni_viewer2
+
+# fast build rule for target.
+pcl_openni_viewer2/fast:
+	$(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer2.dir/build
+.PHONY : pcl_openni_viewer2/fast
+
+#=============================================================================
+# Target rules for targets named pcl_openni_viewer_simple
+
+# Build rule for target.
+pcl_openni_viewer_simple: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_openni_viewer_simple
+.PHONY : pcl_openni_viewer_simple
+
+# fast build rule for target.
+pcl_openni_viewer_simple/fast:
+	$(MAKE) -f visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build.make visualization/tools/CMakeFiles/pcl_openni_viewer_simple.dir/build
+.PHONY : pcl_openni_viewer_simple/fast
 
 #=============================================================================
 # Target rules for targets named pcl_pcd_image_viewer
@@ -1716,8 +1755,11 @@ help:
 	@echo "... pcl_vtk2ply"
 	@echo "... pcl_xyz2pcd"
 	@echo "... pcl_visualization"
+	@echo "... openninormal"
 	@echo "... pcl_hdl_viewer_simple"
 	@echo "... pcl_openni_viewer"
+	@echo "... pcl_openni_viewer2"
+	@echo "... pcl_openni_viewer_simple"
 	@echo "... pcl_pcd_image_viewer"
 	@echo "... pcl_timed_trigger_test"
 	@echo "... pcl_viewer"

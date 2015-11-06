@@ -19,6 +19,21 @@
 # - registration
 # - recognition
 # - visualization
+# - common
+# - octree
+# - geometry
+# - kdtree
+# - search
+# - sample_consensus
+# - filters
+# - features
+# - keypoints
+# - io
+# - segmentation
+# - surface
+# - registration
+# - recognition
+# - visualization
 # - tracking
 # - people
 # - outofcore
@@ -584,7 +599,7 @@ endif(EXISTS "${PCL_ROOT}/include/pcl-${PCL_VERSION_MAJOR}.${PCL_VERSION_MINOR}/
 set(PCL_DEBUG_SUFFIX "")
 set(PCL_RELEASE_SUFFIX "")
 
-set(pcl_all_components  common octree geometry kdtree search sample_consensus filters features keypoints io segmentation surface registration recognition visualization tracking people outofcore )
+set(pcl_all_components  common octree geometry kdtree search sample_consensus filters features keypoints io segmentation surface registration recognition visualization common octree geometry kdtree search sample_consensus filters features keypoints io segmentation surface registration recognition visualization tracking people outofcore )
 list(LENGTH pcl_all_components PCL_NB_COMPONENTS)
 
 #list each component dependencies IN PCL
@@ -601,7 +616,21 @@ set(pcl_segmentation_int_dep common geometry search sample_consensus kdtree octr
 set(pcl_surface_int_dep common search kdtree octree )
 set(pcl_registration_int_dep common octree kdtree search sample_consensus features filters )
 set(pcl_recognition_int_dep common io search kdtree octree features filters registration sample_consensus )
-set(pcl_visualization_int_dep common io kdtree geometry search filters )
+set(pcl_visualization_int_dep common io kdtree geometry search filters features octree )
+set(pcl_octree_int_dep common )
+set(pcl_geometry_int_dep common )
+set(pcl_kdtree_int_dep common )
+set(pcl_search_int_dep common kdtree octree )
+set(pcl_sample_consensus_int_dep common search )
+set(pcl_filters_int_dep common sample_consensus search kdtree octree )
+set(pcl_features_int_dep common search kdtree octree filters )
+set(pcl_keypoints_int_dep common search kdtree octree features filters )
+set(pcl_io_int_dep common octree )
+set(pcl_segmentation_int_dep common geometry search sample_consensus kdtree octree features filters )
+set(pcl_surface_int_dep common search kdtree octree )
+set(pcl_registration_int_dep common octree kdtree search sample_consensus features filters )
+set(pcl_recognition_int_dep common io search kdtree octree features filters registration sample_consensus )
+set(pcl_visualization_int_dep common io kdtree geometry search filters features octree )
 set(pcl_tracking_int_dep common search kdtree filters octree )
 set(pcl_people_int_dep common kdtree search features sample_consensus filters io visualization geometry segmentation octree )
 set(pcl_outofcore_int_dep common io filters octree visualization )
@@ -612,8 +641,15 @@ set(pcl_common_ext_dep eigen boost )
 set(pcl_kdtree_ext_dep flann )
 set(pcl_search_ext_dep flann )
 set(pcl_visualization_ext_dep vtk )
+set(pcl_common_ext_dep eigen boost )
+set(pcl_kdtree_ext_dep flann )
+set(pcl_search_ext_dep flann )
+set(pcl_visualization_ext_dep vtk )
 
 
+set(pcl_io_opt_dep openni openni2 pcap png vtk libusb-1.0 )
+set(pcl_surface_opt_dep qhull )
+set(pcl_visualization_opt_dep openni openni2 )
 set(pcl_io_opt_dep openni openni2 pcap png vtk libusb-1.0 )
 set(pcl_surface_opt_dep qhull )
 set(pcl_visualization_opt_dep openni openni2 )

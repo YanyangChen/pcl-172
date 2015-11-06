@@ -71,6 +71,8 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../geometry/include"
   "../search/include"
   "../filters/include"
+  "../features/include"
+  "../octree/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

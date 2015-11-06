@@ -76,22 +76,22 @@ namespace pcl
     * \author Radu Bogdan Rusu
     * \ingroup filters
     */
-  template <typename PointT>
-  class PassThrough : public FilterIndices<PointT>
+  template <typename PointT> //A function template is a type-independent function that is used as a formula for generating a type-specific version of the function.
+  class PassThrough : public FilterIndices<PointT> // passthrough inheritant from filterindices
   {
-    protected:
-      typedef typename FilterIndices<PointT>::PointCloud PointCloud;
+    protected: //typename states that the name that follows should be treated as a type. Otherwise, names are interpreted to refer to non-types.
+      typedef typename FilterIndices<PointT>::PointCloud PointCloud;  //typedef double wages;  //wages is a synonym for double
       typedef typename PointCloud::Ptr PointCloudPtr;
       typedef typename PointCloud::ConstPtr PointCloudConstPtr;
       typedef typename pcl::traits::fieldList<PointT>::type FieldList;
 
-    public:
-
+    public:  //Private members are only accessible within the class defining them.
+             //Protected members are accessible in the class that defines them and in classes that inherit from that class.
       typedef boost::shared_ptr< PassThrough<PointT> > Ptr;
       typedef boost::shared_ptr< const PassThrough<PointT> > ConstPtr;
 
 
-      /** \brief Constructor.
+      /** \brief Constructor. //constructor??
         * \param[in] extract_removed_indices Set to true if you want to be able to extract the indices of points being removed (default = false).
         */
       PassThrough (bool extract_removed_indices = false) :

@@ -1752,7 +1752,7 @@ PCL_SUBSYS_DEPS_tools:INTERNAL=visualization
 //Map value
 PCL_SUBSYS_DEPS_tracking:INTERNAL=common;search;kdtree;filters;octree
 //Map value
-PCL_SUBSYS_DEPS_visualization:INTERNAL=common;io;kdtree;geometry;search;filters
+PCL_SUBSYS_DEPS_visualization:INTERNAL=common;io;kdtree;geometry;search;filters;features;octree
 //Subsystem descriptions
 PCL_SUBSYS_DESC:INTERNAL=
 //Map value

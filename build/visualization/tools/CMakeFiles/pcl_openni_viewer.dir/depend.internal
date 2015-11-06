@@ -11,31 +11,44 @@ visualization/tools/CMakeFiles/pcl_openni_viewer.dir/openni_viewer.cpp.o
  ../common/include/pcl/PolygonMesh.h
  ../common/include/pcl/TextureMesh.h
  ../common/include/pcl/Vertices.h
+ ../common/include/pcl/cloud_iterator.h
+ ../common/include/pcl/common/centroid.h
  ../common/include/pcl/common/common.h
  ../common/include/pcl/common/concatenate.h
  ../common/include/pcl/common/copy_point.h
  ../common/include/pcl/common/eigen.h
+ ../common/include/pcl/common/impl/accumulators.hpp
+ ../common/include/pcl/common/impl/centroid.hpp
  ../common/include/pcl/common/impl/common.hpp
  ../common/include/pcl/common/impl/copy_point.hpp
  ../common/include/pcl/common/impl/eigen.hpp
  ../common/include/pcl/common/impl/io.hpp
+ ../common/include/pcl/common/impl/projection_matrix.hpp
  ../common/include/pcl/common/io.h
  ../common/include/pcl/common/point_tests.h
+ ../common/include/pcl/common/projection_matrix.h
  ../common/include/pcl/common/synchronizer.h
+ ../common/include/pcl/common/time.h
  ../common/include/pcl/console/print.h
  ../common/include/pcl/conversions.h
  ../common/include/pcl/correspondence.h
  ../common/include/pcl/exceptions.h
  ../common/include/pcl/for_each_type.h
+ ../common/include/pcl/impl/cloud_iterator.hpp
  ../common/include/pcl/impl/pcl_base.hpp
  ../common/include/pcl/impl/point_types.hpp
  ../common/include/pcl/pcl_base.h
  ../common/include/pcl/pcl_exports.h
  ../common/include/pcl/pcl_macros.h
  ../common/include/pcl/point_cloud.h
+ ../common/include/pcl/point_representation.h
  ../common/include/pcl/point_traits.h
  ../common/include/pcl/point_types.h
  ../common/include/pcl/register_point_struct.h
+ ../features/include/pcl/features/feature.h
+ ../features/include/pcl/features/impl/feature.hpp
+ ../features/include/pcl/features/impl/normal_3d.hpp
+ ../features/include/pcl/features/normal_3d.h
  ../filters/include/pcl/filters/boost.h
  ../filters/include/pcl/filters/filter.h
  ../filters/include/pcl/filters/filter_indices.h
@@ -59,6 +72,27 @@ visualization/tools/CMakeFiles/pcl_openni_viewer.dir/openni_viewer.cpp.o
  ../io/include/pcl/io/openni_camera/openni_image_bayer_grbg.h
  ../io/include/pcl/io/openni_camera/openni_ir_image.h
  ../io/include/pcl/io/openni_grabber.h
+ ../kdtree/include/pcl/kdtree/flann.h
+ ../kdtree/include/pcl/kdtree/impl/kdtree_flann.hpp
+ ../kdtree/include/pcl/kdtree/kdtree.h
+ ../kdtree/include/pcl/kdtree/kdtree_flann.h
+ ../octree/include/pcl/octree/impl/octree_pointcloud.hpp
+ ../octree/include/pcl/octree/impl/octree_search.hpp
+ ../octree/include/pcl/octree/octree_base.h
+ ../octree/include/pcl/octree/octree_container.h
+ ../octree/include/pcl/octree/octree_iterator.h
+ ../octree/include/pcl/octree/octree_key.h
+ ../octree/include/pcl/octree/octree_nodes.h
+ ../octree/include/pcl/octree/octree_pointcloud.h
+ ../octree/include/pcl/octree/octree_search.h
+ ../search/include/pcl/search/impl/kdtree.hpp
+ ../search/include/pcl/search/impl/organized.hpp
+ ../search/include/pcl/search/impl/search.hpp
+ ../search/include/pcl/search/kdtree.h
+ ../search/include/pcl/search/octree.h
+ ../search/include/pcl/search/organized.h
+ ../search/include/pcl/search/pcl_search.h
+ ../search/include/pcl/search/search.h
  ../visualization/include/pcl/visualization/area_picking_event.h
  ../visualization/include/pcl/visualization/boost.h
  ../visualization/include/pcl/visualization/cloud_viewer.h

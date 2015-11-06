@@ -96,6 +96,8 @@ bin/pcl_openni_viewer: lib/libpcl_io.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_kdtree.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_visualization.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_filters.so.1.7.2
+bin/pcl_openni_viewer: lib/libpcl_features.so.1.7.2
+bin/pcl_openni_viewer: lib/libpcl_octree.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_io.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_io_ply.so.1.7.2
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libpng.so
@@ -123,11 +125,11 @@ bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libSM.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libICE.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libX11.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libXext.so
+bin/pcl_openni_viewer: lib/libpcl_filters.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_sample_consensus.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_search.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_kdtree.so.1.7.2
 bin/pcl_openni_viewer: lib/libpcl_common.so.1.7.2
-bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
 bin/pcl_openni_viewer: lib/libpcl_octree.so.1.7.2
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libboost_system.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -136,6 +138,7 @@ bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libpthread.so
+bin/pcl_openni_viewer: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
 bin/pcl_openni_viewer: visualization/tools/CMakeFiles/pcl_openni_viewer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/pcl_openni_viewer"
 	cd /home/chen/pcl-pcl-1.7.2/build/visualization/tools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pcl_openni_viewer.dir/link.txt --verbose=$(VERBOSE)
